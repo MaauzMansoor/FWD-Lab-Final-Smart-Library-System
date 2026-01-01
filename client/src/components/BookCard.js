@@ -37,9 +37,6 @@ function BookCard({ book, onDelete }) {
 
   return (
     <div className="book-card">
-      {/* Book Icon */}
-      <div className="book-icon">📖</div>
-
       {/* Book Information */}
       <div className="book-info">
         <h3 className="book-title">{book.title}</h3>
@@ -70,7 +67,7 @@ function BookCard({ book, onDelete }) {
             className="delete-btn"
             title="Delete this book"
           >
-            🗑️ Delete
+            Delete Book
           </button>
         ) : (
           <div className="confirm-delete">

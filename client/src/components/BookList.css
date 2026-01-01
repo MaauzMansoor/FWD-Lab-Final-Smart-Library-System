@@ -10,25 +10,20 @@
 .no-books {
   text-align: center;
   padding: 60px 20px;
-  background: #f8f9fa;
+  background: #2d2d2d;
   border-radius: 12px;
   margin-top: 20px;
-}
-
-.no-books-icon {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  opacity: 0.5;
+  border: 1px solid #404040;
 }
 
 .no-books h3 {
-  color: #1e40af;
+  color: #f1f5f9;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .no-books p {
-  color: #666;
+  color: #94a3b8;
   font-size: 1.1rem;
 }
 

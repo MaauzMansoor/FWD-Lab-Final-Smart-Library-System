@@ -12,7 +12,6 @@ function BookList({ books, onDeleteBook }) {
   if (books.length === 0) {
     return (
       <div className="no-books">
-        <div className="no-books-icon">📚</div>
         <h3>No books in the library yet</h3>
         <p>Add your first book using the form above!</p>
       </div>

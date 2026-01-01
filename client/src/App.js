@@ -67,7 +67,7 @@ function App() {
       setBooks([response.data, ...books]);
 
       // Show success message
-      setSuccessMessage('Book added successfully! 📚');
+      setSuccessMessage('Book added successfully!');
 
       // Clear success message after 3 seconds
       setTimeout(() => setSuccessMessage(''), 3000);
@@ -105,7 +105,7 @@ function App() {
       setBooks(books.filter(book => book._id !== bookId));
 
       // Show success message
-      setSuccessMessage('Book deleted successfully! 🗑️');
+      setSuccessMessage('Book deleted successfully!');
 
       // Clear success message after 3 seconds
       setTimeout(() => setSuccessMessage(''), 3000);
@@ -123,7 +123,7 @@ function App() {
       {/* Header Section */}
       <header className="app-header">
         <div className="container">
-          <h1>📚 Smart Library System</h1>
+          <h1>Smart Library System</h1>
           <p>Manage your book collection efficiently</p>
         </div>
       </header>
