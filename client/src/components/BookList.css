@@ -1,0 +1,100 @@
+/* Book List Container - Responsive Grid Layout */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Empty State - No Books Available */
+.no-books {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.no-books-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-books h3 {
+  color: #667eea;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.no-books p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design - Tablet (768px and below) */
+@media (max-width: 768px) {
+  .book-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .no-books {
+    padding: 40px 15px;
+  }
+
+  .no-books-icon {
+    font-size: 3rem;
+  }
+
+  .no-books h3 {
+    font-size: 1.3rem;
+  }
+
+  .no-books p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design - Mobile (480px and below) */
+@media (max-width: 480px) {
+  .book-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .no-books {
+    padding: 30px 10px;
+  }
+
+  .no-books-icon {
+    font-size: 2.5rem;
+  }
+
+  .no-books h3 {
+    font-size: 1.2rem;
+  }
+
+  .no-books p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Devices (320px) */
+@media (max-width: 320px) {
+  .book-list {
+    gap: 12px;
+  }
+
+  .no-books {
+    padding: 25px 10px;
+  }
+
+  .no-books-icon {
+    font-size: 2rem;
+  }
+
+  .no-books h3 {
+    font-size: 1.1rem;
+  }
+}
