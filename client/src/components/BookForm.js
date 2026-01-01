@@ -36,7 +36,7 @@ function BookForm({ onAddBook }) {
    */
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
-    
+
     // Validate that all fields are filled
     if (!formData.title || !formData.author || !formData.isbn || !formData.year) {
       alert('Please fill in all fields');
@@ -46,7 +46,7 @@ function BookForm({ onAddBook }) {
     // Validate year is a valid number
     const yearNum = parseInt(formData.year);
     const currentYear = new Date().getFullYear();
-    
+
     if (isNaN(yearNum) || yearNum < 1000 || yearNum > currentYear) {
       alert(`Please enter a valid year between 1000 and ${currentYear}`);
       return;
@@ -135,8 +135,8 @@ function BookForm({ onAddBook }) {
       </div>
 
       {/* Submit Button */}
-      <button 
-        type="submit" 
+      <button
+        type="submit"
         className="submit-btn"
         disabled={isSubmitting}
       >

@@ -11,13 +11,13 @@ import './App.css';
 function App() {
   // State to store the list of books fetched from backend
   const [books, setBooks] = useState([]);
-  
+
   // State to manage loading status
   const [loading, setLoading] = useState(true);
-  
+
   // State to store and display error messages
   const [error, setError] = useState('');
-  
+
   // State to store and display success messages
   const [successMessage, setSuccessMessage] = useState('');
 
@@ -37,10 +37,10 @@ function App() {
     try {
       setLoading(true);
       setError('');
-      
+
       // Make GET request to fetch all books
       const response = await axios.get('http://localhost:5000/api/books');
-      
+
       // Update state with fetched books
       setBooks(response.data);
       setLoading(false);
@@ -59,33 +59,33 @@ function App() {
     try {
       setError('');
       setSuccessMessage('');
-      
+
       // Make POST request to add new book
       const response = await axios.post('http://localhost:5000/api/books', bookData);
-      
+
       // Add new book to the beginning of the books array (for immediate UI update)
       setBooks([response.data, ...books]);
-      
+
       // Show success message
       setSuccessMessage('Book added successfully! 📚');
-      
+
       // Clear success message after 3 seconds
       setTimeout(() => setSuccessMessage(''), 3000);
-      
+
       return true; // Indicate success to the form component
     } catch (err) {
       console.error('Error adding book:', err);
-      
+
       // Display appropriate error message based on error response
       if (err.response && err.response.data && err.response.data.message) {
         setError(err.response.data.message);
       } else {
         setError('Failed to add book. Please try again.');
       }
-      
+
       // Clear error message after 5 seconds
       setTimeout(() => setError(''), 5000);
-      
+
       return false; // Indicate failure to the form component
     }
   };
@@ -97,22 +97,22 @@ function App() {
   const handleDeleteBook = async (bookId) => {
     try {
       setError('');
-      
+
       // Make DELETE request to remove book
       await axios.delete(`http://localhost:5000/api/books/${bookId}`);
-      
+
       // Remove book from state (immediate UI update)
       setBooks(books.filter(book => book._id !== bookId));
-      
+
       // Show success message
       setSuccessMessage('Book deleted successfully! 🗑️');
-      
+
       // Clear success message after 3 seconds
       setTimeout(() => setSuccessMessage(''), 3000);
     } catch (err) {
       console.error('Error deleting book:', err);
       setError('Failed to delete book. Please try again.');
-      
+
       // Clear error message after 5 seconds
       setTimeout(() => setError(''), 5000);
     }
@@ -153,7 +153,7 @@ function App() {
         {/* Book List Component */}
         <section className="list-section">
           <h2>Book Collection ({books.length} {books.length === 1 ? 'book' : 'books'})</h2>
-          
+
           {loading ? (
             <div className="loading">Loading books...</div>
           ) : (

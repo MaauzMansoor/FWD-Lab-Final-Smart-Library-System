@@ -14,11 +14,13 @@ A modern web application built with the MERN stack that allows librarians to man
 ## 🛠️ Tech Stack
 
 **Frontend:**
+
 - React.js
 - CSS3 (Responsive Design)
 - Axios for API calls
 
 **Backend:**
+
 - Node.js
 - Express.js
 - MongoDB with Mongoose
@@ -27,6 +29,7 @@ A modern web application built with the MERN stack that allows librarians to man
 ## 📋 Prerequisites
 
 Before running this application, make sure you have the following installed:
+
 - Node.js (v14 or higher)
 - npm or yarn
 - MongoDB Atlas account (or local MongoDB installation)
@@ -108,10 +111,10 @@ FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM/
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/books` | Get all books |
-| POST | `/api/books` | Add a new book |
+| Method | Endpoint         | Description         |
+| ------ | ---------------- | ------------------- |
+| GET    | `/api/books`     | Get all books       |
+| POST   | `/api/books`     | Add a new book      |
 | DELETE | `/api/books/:id` | Delete a book by ID |
 
 ## 📸 Output Screenshots
@@ -123,6 +126,7 @@ FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM/
 ## 👤 Author
 
 **Maauz Mansoor**
+
 - Student ID: [Your Roll Number]
 - University of Multan Campus
 

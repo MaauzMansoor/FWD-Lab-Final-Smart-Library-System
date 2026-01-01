@@ -140,7 +140,8 @@
   justify-content: center;
 }
 
-.confirm-yes, .confirm-no {
+.confirm-yes,
+.confirm-no {
   flex: 1;
   padding: 8px 15px;
   border: none;
@@ -240,7 +241,8 @@
     gap: 8px;
   }
 
-  .confirm-yes, .confirm-no {
+  .confirm-yes,
+  .confirm-no {
     padding: 7px 12px;
     font-size: 0.85rem;
   }

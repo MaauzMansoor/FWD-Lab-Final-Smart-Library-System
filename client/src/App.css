@@ -53,7 +53,8 @@ main {
 }
 
 /* Section Styles */
-.form-section, .list-section {
+.form-section,
+.list-section {
   background: white;
   border-radius: 12px;
   padding: 30px;
@@ -61,7 +62,8 @@ main {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.form-section h2, .list-section h2 {
+.form-section h2,
+.list-section h2 {
   color: #667eea;
   margin-bottom: 20px;
   font-size: 1.8rem;
@@ -133,11 +135,13 @@ main {
     font-size: 1rem;
   }
 
-  .form-section, .list-section {
+  .form-section,
+  .list-section {
     padding: 20px;
   }
 
-  .form-section h2, .list-section h2 {
+  .form-section h2,
+  .list-section h2 {
     font-size: 1.5rem;
   }
 
@@ -156,12 +160,14 @@ main {
     font-size: 0.9rem;
   }
 
-  .form-section, .list-section {
+  .form-section,
+  .list-section {
     padding: 15px;
     margin-bottom: 20px;
   }
 
-  .form-section h2, .list-section h2 {
+  .form-section h2,
+  .list-section h2 {
     font-size: 1.3rem;
   }
 }
@@ -176,7 +182,8 @@ main {
     font-size: 1.4rem;
   }
 
-  .form-section, .list-section {
+  .form-section,
+  .list-section {
     padding: 12px;
   }
 
@@ -184,4 +191,3 @@ main {
     padding: 0 10px;
   }
 }
-

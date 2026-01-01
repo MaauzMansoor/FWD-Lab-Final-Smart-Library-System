@@ -23,9 +23,9 @@ function BookList({ books, onDeleteBook }) {
     <div className="book-list">
       {/* Map through books array and render BookCard for each book */}
       {books.map((book) => (
-        <BookCard 
-          key={book._id} 
-          book={book} 
+        <BookCard
+          key={book._id}
+          book={book}
           onDelete={onDeleteBook}
         />
       ))}

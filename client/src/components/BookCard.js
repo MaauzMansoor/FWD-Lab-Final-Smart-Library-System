@@ -43,18 +43,18 @@ function BookCard({ book, onDelete }) {
       {/* Book Information */}
       <div className="book-info">
         <h3 className="book-title">{book.title}</h3>
-        
+
         <div className="book-details">
           <p className="book-author">
             <span className="label">Author:</span>
             <span className="value">{book.author}</span>
           </p>
-          
+
           <p className="book-isbn">
             <span className="label">ISBN:</span>
             <span className="value">{book.isbn}</span>
           </p>
-          
+
           <p className="book-year">
             <span className="label">Year:</span>
             <span className="value">{book.year}</span>
@@ -65,8 +65,8 @@ function BookCard({ book, onDelete }) {
       {/* Delete Button and Confirmation */}
       <div className="book-actions">
         {!showConfirm ? (
-          <button 
-            onClick={handleDeleteClick} 
+          <button
+            onClick={handleDeleteClick}
             className="delete-btn"
             title="Delete this book"
           >

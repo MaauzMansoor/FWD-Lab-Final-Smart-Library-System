@@ -40,7 +40,7 @@ app.use('/api/books', booksRouter);
  * Root endpoint - API health check
  */
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'Smart Library System API',
     status: 'Server is running',
     endpoints: {
@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
  * 404 Error Handler - Handle undefined routes
  */
 app.use((req, res) => {
-  res.status(404).json({ 
+  res.status(404).json({
     message: 'Route not found',
     requestedUrl: req.originalUrl
   });
@@ -66,7 +66,7 @@ app.use((req, res) => {
  */
 app.use((err, req, res, next) => {
   console.error('Server Error:', err.stack);
-  res.status(500).json({ 
+  res.status(500).json({
     message: 'Internal server error',
     error: process.env.NODE_ENV === 'development' ? err.message : 'Something went wrong'
   });
