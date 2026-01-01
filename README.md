@@ -1,141 +1,123 @@
 # Smart Library System
 
-A modern web application built with the MERN stack that allows librarians to manage book collections efficiently. This Single Page Application (SPA) provides features to add, view, and remove books from the library database.
+A web application built with the MERN stack for managing library book collections.
 
-## 🚀 Features
 
-- **Add Books**: Add new books with title, author, ISBN, and publication year
-- **View Books**: Display all books in a responsive card layout
-- **Delete Books**: Remove books from the collection
-- **Responsive Design**: Works seamlessly on devices from 320px and above
-- **Real-time Updates**: Dynamic UI updates without page reload
-- **Error Handling**: User-friendly error messages and validation
+## Description
 
-## 🛠️ Tech Stack
+This is a Single Page Application that allows users to manage a library's book collection. Users can add new books with details like title, author, ISBN, and publication year. The application displays all books in a card layout and allows deletion of books from the collection.
 
-**Frontend:**
 
+## Features
+
+- Add new books to the library
+- View all books in card format
+- Delete books from the collection
+- Responsive design for mobile and desktop
+- Real-time UI updates
+- Form validation and error handling
+
+
+## Technology Stack
+
+Frontend:
 - React.js
-- CSS3 (Responsive Design)
-- Axios for API calls
+- CSS3
+- Axios
 
-**Backend:**
-
+Backend:
 - Node.js
 - Express.js
-- MongoDB with Mongoose
-- CORS enabled
+- MongoDB
+- Mongoose
+- CORS
 
-## 📋 Prerequisites
 
-Before running this application, make sure you have the following installed:
+## Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (version 14 or higher)
 - npm or yarn
-- MongoDB Atlas account (or local MongoDB installation)
+- MongoDB Atlas account or local MongoDB installation
 
-## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
+## Installation and Setup
 
-```bash
-git clone https://github.com/Maauz-Mansoor/FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM.git
-cd FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM
+Clone the repository:
+
+```
+git clone https://github.com/MaauzMansoor/FWD-Lab-Final-Smart-Library-System.git
+cd FWD-Lab-Final-Smart-Library-System
 ```
 
-### 2. Backend Setup
 
-```bash
-# Navigate to server directory
+Backend Setup:
+
+```
 cd server
-
-# Install dependencies
 npm install
-
-# Create a .env file and add your MongoDB connection string
-# Create .env file with:
-# MONGODB_URI=your_mongodb_connection_string
-# PORT=5000
-
-# Start the server
 npm start
 ```
 
-The backend server will run on `http://localhost:5000`
+The backend server runs on http://localhost:5000
 
-### 3. Frontend Setup
 
-```bash
-# Navigate to client directory (from project root)
+Frontend Setup:
+
+```
 cd client
-
-# Install dependencies
 npm install
-
-# Start the React application
 npm start
 ```
 
-The frontend application will run on `http://localhost:3000`
+The frontend application runs on http://localhost:3000
 
-## 📁 Project Structure
+
+## Project Structure
 
 ```
-FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM/
-│
-├── client/                 # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── BookForm.js
-│   │   │   ├── BookList.js
-│   │   │   └── BookCard.js
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   └── package.json
-│
-├── server/                 # Node.js backend
-│   ├── models/
-│   │   └── Book.js
-│   ├── routes/
-│   │   └── books.js
-│   ├── config/
-│   │   └── db.js
-│   ├── server.js
-│   └── package.json
-│
-├── .gitignore
-└── README.md
+client/
+  - React frontend application
+  - Contains components for BookForm, BookList, and BookCard
+  
+server/
+  - Node.js backend application
+  - Contains models, routes, and database configuration
 ```
 
-## 🔌 API Endpoints
 
-| Method | Endpoint         | Description         |
-| ------ | ---------------- | ------------------- |
-| GET    | `/api/books`     | Get all books       |
-| POST   | `/api/books`     | Add a new book      |
-| DELETE | `/api/books/:id` | Delete a book by ID |
+## API Endpoints
 
-## 📸 Output Screenshots
+```
+GET /api/books - Retrieve all books
+POST /api/books - Add a new book
+DELETE /api/books/:id - Delete a book by ID
+```
 
-![Home Page](screenshots/home.png)
-![Add Book Form](screenshots/add-book.png)
-![Book List](screenshots/book-list.png)
 
-## 👤 Author
+## Environment Variables
 
-**Muhammad Maauz Mansoor**
+Create a .env file in the server directory:
 
-- University of Multan Campus
-- Frontend Web Development Lab - Fall 2025
+```
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
+```
 
-## 📅 Project Timeline
 
-- **Course**: Frontend Web Development Lab
-- **Semester**: Fall 2025
-- **Submission Date**: January 1, 2026
+## Author
 
-## 📝 License
+Muhammad Maauz Mansoor
+University of Multan Campus
+Frontend Web Development Lab - Fall 2025
 
-This project is created for educational purposes as part of the Final Lab Examination.
+
+## Project Information
+
+Course: Frontend Web Development Lab
+Semester: Fall 2025
+Submission Date: January 1, 2026
+
+
+## License
+
+This project is created for educational purposes.
