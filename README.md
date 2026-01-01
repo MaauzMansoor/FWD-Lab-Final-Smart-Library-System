@@ -125,10 +125,10 @@ FWD-LAB-FINAL-SMART-LIBRARY-SYSTEM/
 
 ## 👤 Author
 
-**Maauz Mansoor**
+**Muhammad Maauz Mansoor**
 
-- Student ID: [Your Roll Number]
 - University of Multan Campus
+- Frontend Web Development Lab - Fall 2025
 
 ## 📅 Project Timeline
 

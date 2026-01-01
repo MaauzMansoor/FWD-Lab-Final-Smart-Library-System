@@ -125,6 +125,13 @@ main {
 .app-footer p {
   color: #666;
   font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.app-footer .developer-credit {
+  color: #1e40af;
+  font-weight: 600;
+  margin-top: 8px;
 }
 
 /* Responsive Design - Tablet (768px and below) */

@@ -165,6 +165,7 @@ function App() {
       {/* Footer Section */}
       <footer className="app-footer">
         <p>&copy; 2026 Smart Library System | University of Multan Campus</p>
+        <p className="developer-credit">Developed by Muhammad Maauz Mansoor</p>
       </footer>
     </div>
   );
