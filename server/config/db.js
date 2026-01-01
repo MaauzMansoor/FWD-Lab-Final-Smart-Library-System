@@ -6,11 +6,8 @@ const mongoose = require('mongoose');
  */
 const connectDB = async () => {
   try {
-    // Connect to MongoDB with recommended options
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // Connect to MongoDB - removed deprecated options
+    await mongoose.connect(process.env.MONGODB_URI);
     
     console.log('✅ MongoDB Connected Successfully');
   } catch (error) {
