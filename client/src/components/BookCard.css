@@ -13,8 +13,8 @@
 
 .book-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
-  border-color: #667eea;
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
 }
 
 /* Book Icon */
@@ -32,7 +32,7 @@
 }
 
 .book-title {
-  color: #667eea;
+  color: #1e40af;
   font-size: 1.4rem;
   margin-bottom: 15px;
   font-weight: 700;
@@ -88,7 +88,7 @@
 /* Delete Button */
 .delete-btn {
   width: 100%;
-  background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+  background: #ef4444;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -97,13 +97,13 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.25);
 }
 
 .delete-btn:hover {
-  background: linear-gradient(135deg, #ee5a6f, #ff6b6b);
+  background: #dc2626;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
 }
 
 .delete-btn:active {
